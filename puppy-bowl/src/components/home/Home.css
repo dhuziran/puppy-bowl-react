@@ -1,0 +1,29 @@
+.background{
+    position: fixed;
+    background-image: linear-gradient(45deg, #008DD5, #E6E6EA);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color:#FED766;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.puppy-bowl{
+    font-size: 8rem;
+}
+
+.button{
+    background-color: black;
+    color:#FED766;
+    font-size: 2.5rem;
+    height: 7vh;
+    width: 15vw;
+    border-radius: 1rem;
+}
