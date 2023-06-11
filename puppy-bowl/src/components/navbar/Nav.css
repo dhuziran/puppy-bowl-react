@@ -1,0 +1,22 @@
+.nav-container{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.all-nav-buttons{
+    align-self: center;
+}
+
+.nav-buttons{
+    width: 3.5vw;
+    height: 3.5vh;
+    border-radius: 1.5rem;
+    background-color: #FED766;
+}
+
+.nav-buttons:hover{
+    opacity: 0.5;
+}
+

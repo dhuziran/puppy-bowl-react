@@ -1,0 +1,28 @@
+.single-container{
+    position: fixed;
+    background-image: linear-gradient(45deg, #008DD5, #E6E6EA);
+    height: 100%;
+    width: 100%;
+    
+}
+
+.puppy{
+    text-align: center;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+.puppy-name{
+    font-size: 8rem;
+}
+
+.puppy-stats{
+    font-size: 4rem;
+}
+
+.single-image{
+    height: 50vh;
+    width: 25vw;
+}

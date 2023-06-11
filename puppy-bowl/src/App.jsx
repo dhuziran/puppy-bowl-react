@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
+import Nav from './components/navbar/Nav'
 import Home from './components/home/Home'
 import Draft from './components/draft-page/Draft'
 import Players from './components/players/Players'
 import SinglePlayer from './components/single-player/SinglePlayer'
+import Create from './components/create-player/Create'
 
 function App() {
   const [puppies, setPuppies] = useState([])
@@ -26,13 +28,14 @@ function App() {
   }, [])
   return (
     <div>
-      {/* <Home /> */}
+      <Nav />
 
       <Routes>
         <Route path = '/' element= {<Home />} />
         <Route path = '/draft-page' element = {<Draft puppies = {puppies} />} />
         <Route path = '/players' element = {<Players puppies = {puppies}/>} />
-        <Route path = '/players/:puppyId' element={<SinglePlayer puppies = {puppies}/>} />
+        <Route path = '/players/:puppyId' element={<SinglePlayer puppies = {puppies} />} />
+        <Route path = '/create-player' element={<Create puppies = {puppies} setPuppies = {setPuppies} />} />
       </Routes>
     </div>
   )

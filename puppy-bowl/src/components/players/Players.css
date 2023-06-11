@@ -1,5 +1,5 @@
 .players-container{
-    position: fixed;
+    position: sticky;
     background-image: linear-gradient(45deg, #008DD5, #E6E6EA);
     height: 100%;
     width: 100%;
@@ -9,16 +9,30 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 2%;
 }
 
 .individual-player{
     text-align: center;
-    border: 2px solid red;
-    
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 2%;
 }
 
 .header2{
     text-align: center;
     text-shadow: 1px 1px 2px black;
+}
+
+.image{
+    height: 40vh;
+    width: 20vw;
+}
+
+.puppy-button{
+    width: 6vw;
+    height: 3.5vh;
+    border-radius: 1.5rem;
+    background-color: #FED766;
 }
